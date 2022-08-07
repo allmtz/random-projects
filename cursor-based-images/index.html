@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="container">
+        <img class ='img' src="images/anthony-melone-W6zVhDL_ijg-unsplash.jpg"> 
+    </div>
+    
+</body>
+
+<script>
+
+    const img = document.querySelector('.img')
+    const numberOfImages = 3
+    let x 
+
+    const sectionWidth = Math.floor(window.innerWidth / numberOfImages)
+    const section1 = sectionWidth 
+    const section2 = sectionWidth * 2
+    const section3 = sectionWidth * 3
+
+    console.log(section1, section2, section3)
+
+    window.addEventListener('mousemove', (e)=>{
+        x = e.offsetX
+        
+        if(e.target != document.body){
+            x = e.offsetX + e.target.offsetLeft
+        }
+
+       if(x < section1){
+        console.log('section1')
+        img.src = 'images/anthony-melone-W6zVhDL_ijg-unsplash.jpg'
+
+       }
+       if( x > section1 && x < section2){
+        console.log('section2')
+        img.src = 'images/j-lee-yRXuXvy4sQ4-unsplash.jpg'
+
+       }
+       if( x > section2 && x < section3){
+        console.log('section3')
+        img.src = 'images/roberta-sorge-UvVVnUmW2mQ-unsplash.jpg'
+
+    }
+
+    })
+
+</script>
+</html>
