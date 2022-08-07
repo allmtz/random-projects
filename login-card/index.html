@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Card With Dark Mode</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+
+
+<body>
+    <div class="container">
+        <header>
+            <img src="/login-card/logo.png" alt="company logo">
+            <p>Create Your Free Account  Bellow</p>
+        </header>
+        <form >
+            <p>Name</p>
+            <input type="text" name="name" id="name" placeholder="Enter Your Full Name">
+            <p>Email</p>
+            <input type="text" name="email" id="email" placeholder="Enter Your Email Address">
+            <p>Password</p>
+            <input type="text" name="password" id="password" placeholder="Enter Your Password">
+            <button>Sign Up</button>
+        </form>
+        <footer>Already have an Account?  Sign in <a href="">Here</a></footer>
+        <button class="toggle" onclick="toggleMode()"></button>
+    </div>
+
+<script>
+
+    const toggleBtn = document.body.querySelector('.toggle')
+    const container = document.body.querySelector('.container')
+    const form = document.body.querySelector('form')
+    
+    form.addEventListener('submit',(e) => e.preventDefault())
+    
+    function toggleMode(){
+        container.classList.toggle('dark')
+        toggleBtn.classList.toggle('light')
+    }
+
+</script>
+</body>
+</html>
