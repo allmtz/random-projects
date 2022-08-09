@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cursor Based Fade</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">  
+        <div class="img1">
+            <img  src="images/anthony-melone-W6zVhDL_ijg-unsplash.jpg"> 
+        </div>
+        <div class="img2">
+            <img  src="images/roberta-sorge-UvVVnUmW2mQ-unsplash.jpg"> 
+        </div>
+            <div class="img3">
+            <img  src="images/j-lee-yRXuXvy4sQ4-unsplash.jpg"> 
+        </div>
+    </div>
+</body>
+
+<script>
+
+    const img1 = document.querySelector('.img1')
+    const img2 = document.querySelector('.img2')
+    const img3 = document.querySelector('.img3')
+    
+
+    const numberOfImages = 3
+    let x 
+
+    const sectionWidth = Math.floor(window.innerWidth / numberOfImages)     //divide viweport into sections, image opacity will change depending on cursosr's X position within a section
+    const section1 = sectionWidth                                          //define pixel width of each section
+    const section2 = sectionWidth * 2
+    const section3 = sectionWidth * 3
+
+    window.addEventListener('mousemove', (e)=>{
+        x = e.offsetX
+
+        if(e.target != document.body){
+            x = e.offsetX + e.target.getBoundingClientRect().x
+        
+        }
+
+        console.log(section1,section2,section3)
+        console.log(x)
+
+       if(x < section1){
+        img1.style.opacity = 1 -  (x/section1)
+
+       }
+       if( x > section1 && x < section2){
+        img2.style.opacity = 1 - ((x-section1)/section1)     //subtract the width of the previous section/sections from the mouse position to normalize the current section
+
+       } 
+
+    })
+
+</script>
+</html>

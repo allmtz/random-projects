@@ -1,0 +1,4 @@
+
+
+
+use getBoundingClientRect() to get x offet of an element when offsetLeft isn't working 
