@@ -1,0 +1,83 @@
+
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    /* display: flex;
+    justify-content: center;
+    align-items: center; */
+    min-height: 100vh;
+    margin: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+
+.container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.row{
+    display: flex;
+    
+    border: 2px solid red;
+}
+
+.column{
+    display: flex;
+    flex-direction: column;
+
+    background-color: border 2px solid cadetblue;
+
+}
+
+nav{
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    
+    background-color: orange;
+
+
+}
+
+nav h3{
+    border: 2px solid black;
+
+}
+
+.sample-cut{
+    height: 500px;
+    width: 80%;
+}
+
+.sample-cut img{
+    width: 100%;
+    height: 600px;
+    
+
+}
+
+.availability{
+    border: 2px solid green;
+    margin-top: 10rem;
+    margin-bottom: 5rem;
+}
+
+.availability h2{
+    text-align: center;
+}
+
+.service-list,
+.service-prices{
+    justify-content: center;
+}
+
+.services{
+    gap: 5rem;
+}
+
