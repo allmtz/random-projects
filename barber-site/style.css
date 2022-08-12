@@ -1,5 +1,9 @@
 
 
+/* font-family: 'Inter', sans-serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Roboto', sans-serif; */
+
 *{
     box-sizing: border-box;
 }
@@ -10,7 +14,20 @@ body{
     align-items: center; */
     min-height: 100vh;
     margin: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Lobster Two', cursive;
+    text-transform: capitalize;
+    background-color: #faf2e4;
+    margin-top: 2rem;
+
+}
+
+/* image{
+    width: 100%;
+    height: 100%;
+} */
+
+header h1{
+    font-size: 4rem;
 }
 
 
@@ -19,12 +36,13 @@ body{
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    
 }
 
 .row{
     display: flex;
     
-    border: 2px solid red;
+    /* border: 2px solid red; */
 }
 
 .column{
@@ -45,10 +63,36 @@ nav{
 
 }
 
-nav h3{
-    border: 2px solid black;
+nav a{
+    text-decoration: none;
+    color: black;
+}
+
+nav a:hover{
+    color: #007664;
+    
+}
+
+img{
+    margin-top: 2rem;
+}
+
+.ig{
+    margin-bottom: .2rem;
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
 
 .sample-cut{
     height: 500px;
@@ -63,21 +107,85 @@ nav h3{
 }
 
 .availability{
-    border: 2px solid green;
-    margin-top: 10rem;
+    width: 30%;
+    text-align: center;
     margin-bottom: 5rem;
+    margin-top: 13rem;
+
+
+    /* border: 2px solid green; */
+
+}
+
+.availability p {
+    font-family: 'Inter', sans-serif; 
+
 }
 
 .availability h2{
     text-align: center;
 }
 
-.service-list,
-.service-prices{
-    justify-content: center;
-}
+.services-container{
+    width: 30%;
+    font-family: 'Inter', sans-serif; 
 
+}
 .services{
-    gap: 5rem;
+    justify-content: space-between;
+    align-items: center;
+
+
 }
 
+.testimonials{
+    text-align: center;
+    width: 30%;
+
+    border: 2px solid green;
+}
+.contact-container{
+    width: 35%;
+    justify-content: space-around;
+    margin-top: 2rem;
+
+    /* border: 2px solid purple; */
+}
+.contact-container h2{
+    text-align: center;
+}
+
+.contact-container p{
+    font-family: 'Inter', sans-serif;
+}
+
+
+
+.about-container{
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    width: 30%;
+
+    /* border: 2px solid orange; */
+
+}
+
+.about-container p{
+    width: 40%;
+    text-align: center;
+    width: 30%;
+    
+}
+
+.about-container img{
+    height: 302px;
+    width: 403;
+    border-radius: 100px;
+
+}
+
+footer h2{
+    text-align: center;
+
+}

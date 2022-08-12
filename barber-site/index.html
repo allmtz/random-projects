@@ -4,12 +4,14 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Barber</title>
     <!-- <script src="script.js" defer></script> -->
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster+Two&family=Roboto&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
 </head>
 <body>
 
@@ -18,68 +20,108 @@
             <h1>Daniel Martinez</h1>
             <img src="" alt="">
         </header>
+
         <nav class="row">
-            <h3>about</h3>
-            <h3>book now</h3>
-            <h3>services</h3>
-            <h3>contact</h3>
-            <a href="" class="ig">ig link</a>
+            <a href="#about">
+                <h2>about</h2>
+            </a>
+            <a href="https://online.getsquire.com/book/the-social-club-grooming-company-detroit">
+                <h2>book now</h2>
+            </a>
+            <a href="#services">
+                <h2>services</h2>
+            </a>
+            <a href="#contact">
+                <h2>contact</h2>
+            </a>
+            <a href="" class="fa fa-instagram fa-3x ig"></a>
         </nav>
+
+
         <section class="sample-cut">
             <img src="images/img1.jpg" alt="">
         </section>
+
         <section class="availability">
             <h2>availability</h2>
             <p>Monday 9:00 - 3:00 PM</p>
             <p>Wednesday 0:00 - 0:00 PM</p>
             <p>Satruday 0:00 - 0:00 PM</p>
         </section>
-        <section class="services row">
+
+        <section id="services" class="services-container column">
             <h2>services</h2>
-            <div class="column service-list">
-                
-                <p>haircut</p>
-                <p>beard trim</p>
-                <p>lineup</p>
-                <p>shampoo</p>
+            <div class="row services">
+                <div class="column service-list">
+                    <p>haircut</p>
+                    <p>beard trim</p>
+                    <p>lineup</p>
+                    <p>shampoo</p>
+                </div>
+                <div class="column service-prices">
+                    <p>$38.00</p>
+                    <p>$38.00</p>
+                    <p>$38.00</p>
+                    <p>$38.00</p>
+                </div>
+                <div class="calendar ">
+                    <p>booking widget MAYBE goes here</p>
+                    <i></i>
+                </div>
             </div>
-            <div class="column service-prices">
-                <p>$38.00</p>
-                <p>$38.00</p>
-                <p>$38.00</p>
-                <p>$38.00</p>
-            </div>
-            <div class="calendar ">
-                <p>maps goes here</p>
-                <i></i>
-            </div>
+                    
+
+
+           
+            
         </section>
         <section class="carousel">
             <img src="" alt="">
+            <h1>carousel</h1>
         </section>
+
         <section class="testimonials">
-            <p>Lorem ipsum,
-                dolor sit amet consectetur adipisicing elit. Vitae, ipsam.</p>
+            <h2>best in the biz testimonials</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero eligendi perferendis veniam voluptatem officiis dolorum iure laboriosam dolor, sequi est nulla exercitationem? Qui asperiores deleniti rerum? Sit, autem qui. Vero!
+
+            </p>
+            
         </section>
-        <section class="contact-container row">
+
+        <section id="contact" class="contact-container row">
             <div>
-                <img src="" alt="">
+                <iframe 
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.5199709184835!2d-122.29925468391923!3d38.313788188735714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085060dbd14534f%3A0x2afb86ff9ee9414c!2sUrban%20Cuts%20390!5e0!3m2!1sen!2sus!4v1660264282630!5m2!1sen!2sus" 
+                    width="550" 
+                    height="400" 
+                    style="border:0;" 
+                    allowfullscreen="" 
+                    loading="lazy" 
+                    referrerpolicy="no-referrer-when-downgrade">
+                </iframe>
             </div>
             <div>
-                <p>2770 Jefferson St. 
+                <h2>contact</h2>
+                <p>2770 Jefferson St.<br> 
                     Napa, CA 94558</p>
                 <p>+1 (707) 752 -7018</p>
             </div>
         </section>
-        <section class="about-container">
+
+        <section id="about" class="about-container column ">
             <h2>daniel martinez</h2>
-            <img src="" alt="">
+            <img src="images/about-image.jpg" alt="">
+            <h2>description
+
+            </h2>
             <p>A lot of words put together to describe Daniel, with what inspires him, his motivation, experience and such.
 
                 Some more words. "Maybe a quote."- Daniel Martinez </p>
 
         </section>
+
         <footer>
+            <h2>another image</h2>
             <img src="" alt="">
             <p>www.ElChinoBlends.com | 2770 Jefferson St, Napa CA 94558 | 707-752-7018</p>
 
