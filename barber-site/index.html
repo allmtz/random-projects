@@ -37,7 +37,7 @@
                 <h2>about</h2>
             </a>
             <a href="https://online.getsquire.com/book/the-social-club-grooming-company-detroit">
-                <h2>book now</h2>
+                <h2>book</h2>
             </a>
             <a href="#services">
                 <h2>services</h2>
@@ -45,9 +45,10 @@
             <a href="#contact">
                 <h2>contact</h2>
             </a>
-            <a href="
-            https://www.instagram.com/elchinoblends/?igshid=YmMyMTA2M2Y%3D" 
-            class="fa fa-instagram fa-2x ig">
+            <a 
+                href="https://www.instagram.com/elchinoblends/?igshid=YmMyMTA2M2Y%3D" 
+                target="_blank"
+                class="fa fa-instagram fa-2x ig">    
             </a>
         </nav>
 
@@ -166,6 +167,21 @@
           clickable: true
         }
       });
+
+
+      let y 
+      const nav = document.body.querySelector('nav')
+      const navEndPoint = nav.offsetTop + nav.offsetHeight  
+      
+      window.addEventListener('scroll',setNavDisplay)
+
+      function setNavDisplay(){      
+        y = window.pageYOffset
+        y >= navEndPoint ? ( nav.classList.remove('nav'), nav.classList.add('nav-active') ) : ( nav.classList.remove('nav-active'), nav.classList.add('nav') )    
+        
+      }
+
+
 </script>
 
 
