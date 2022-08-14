@@ -9,8 +9,19 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    
+    <!-- google fonts  -->
     <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster+Two&family=Roboto&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- font awsome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+  />
 
 </head>
 <body>
@@ -34,12 +45,15 @@
             <a href="#contact">
                 <h2>contact</h2>
             </a>
-            <a href="" class="fa fa-instagram fa-3x ig"></a>
+            <a href="
+            https://www.instagram.com/elchinoblends/?igshid=YmMyMTA2M2Y%3D" 
+            class="fa fa-instagram fa-2x ig">
+            </a>
         </nav>
 
 
         <section class="sample-cut">
-            <img src="images/img1.jpg" alt="">
+            <img src="images/cut.jpg" alt="">
         </section>
 
         <section class="availability">
@@ -75,13 +89,25 @@
            
             
         </section>
+
         <section class="carousel">
-            <img src="" alt="">
-            <h1>carousel</h1>
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide"><img src="images/chair.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/cut.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/tools.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/about-image.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/chair.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/cut.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/tools.jpg" alt=""></div>
+                  <div class="swiper-slide"><img src="images/about-image.jpg" alt=""></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
         </section>
 
         <section class="testimonials">
-            <h2>best in the biz testimonials</h2>
+            <h2>testimonials</h2>
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero eligendi perferendis veniam voluptatem officiis dolorum iure laboriosam dolor, sequi est nulla exercitationem? Qui asperiores deleniti rerum? Sit, autem qui. Vero!
 
             </p>
@@ -92,8 +118,8 @@
             <div>
                 <iframe 
                     src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.5199709184835!2d-122.29925468391923!3d38.313788188735714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085060dbd14534f%3A0x2afb86ff9ee9414c!2sUrban%20Cuts%20390!5e0!3m2!1sen!2sus!4v1660264282630!5m2!1sen!2sus" 
-                    width="550" 
-                    height="400" 
+                    width="350" 
+                    height="300" 
                     style="border:0;" 
                     allowfullscreen="" 
                     loading="lazy" 
@@ -116,16 +142,33 @@
             </h2>
             <p>A lot of words put together to describe Daniel, with what inspires him, his motivation, experience and such.
 
-                Some more words. "Maybe a quote."- Daniel Martinez </p>
+                Some more words. "Maybe a quote."- 
+                
+                Daniel Martinez </p>
 
         </section>
 
         <footer>
-            <h2>another image</h2>
-            <img src="" alt="">
+
+            <div class="footer-img"></div>
             <p>www.ElChinoBlends.com | 2770 Jefferson St, Napa CA 94558 | 707-752-7018</p>
 
         </footer>
     </div>
+
+<script>
+    var swiper = new Swiper(".mySwiper", {
+        slidesPerView: 4,
+        spaceBetween: 30,
+        centeredSlides: true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true
+        }
+      });
+</script>
+
+
+
 </body>
 </html>

@@ -2,3 +2,5 @@
 
 
 use getBoundingClientRect() to get x offet of an element when offsetLeft isn't working 
+
+practice working with images. object-fit, object-position, width, height, using an image in a div vs setting background of a div 
