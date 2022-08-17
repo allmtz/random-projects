@@ -4,6 +4,19 @@
 font-family: 'Lobster Two', cursive;
 font-family: 'Roboto', sans-serif; */
 
+
+/* test fonts  */
+/* 
+font-family: 'Aboreto', cursive;
+font-family: 'Ewert', cursive;
+font-family: 'Inter', sans-serif;
+font-family: 'Lobster Two', cursive;
+font-family: 'Roboto', sans-serif;
+font-family: 'Tapestry', cursive;
+font-family: 'UnifrakturCook', cursive;
+font-family: 'UnifrakturMaguntia', cursive;
+ */
+
 *{
     box-sizing: border-box;
     font-size: 20px;
@@ -15,7 +28,14 @@ body{
     align-items: center; */
     min-height: 100vh;
     margin: 0;
-    font-family: 'Lobster Two', cursive;
+    /* font-family: 'Lobster Two', cursive; */
+    font-family: 'UnifrakturMaguntia', cursive;
+
+
+
+
+
+
     text-transform: capitalize;
     background-color: #faf2e4;
     margin-top: 2rem;
@@ -25,6 +45,22 @@ body{
 
 h2{
     font-size: 50px;
+
+
+    font-family: 'Aboreto', cursive;
+
+
+
+
+
+   
+
+}
+
+p{
+
+    font-family: 'Inter', sans-serif;
+    line-height: 1.5rem;
 
 }
 
@@ -91,11 +127,12 @@ nav a:hover{
 }
 
 .nav-active{
+    width: 10rem;
     position: fixed;
     top: 0;
-    right: 0;
+    left: 0;
     height: 100%;
-    width: 7rem;
+    /* width: 8rem; */
     display: flex;
     flex-direction: column;
     background-color: #BB6946;
@@ -289,5 +326,4 @@ footer h2{
     object-fit: cover;
 
 }
-
 
