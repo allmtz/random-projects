@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     
     <!-- google fonts  -->
-    <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster+Two&family=Roboto&display=swap" rel="stylesheet">
+    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster+Two&family=Roboto&display=swap" rel="stylesheet"> -->
 
     <!-- font awsome -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
@@ -23,6 +23,10 @@
     href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
   />
 
+    <!-- test fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Ewert&family=Inter&family=Lobster+Two&family=Roboto&family=Tapestry&family=UnifrakturCook&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 </head>
 <body>
 
@@ -33,16 +37,16 @@
         </header>
 
         <nav class="row">
-            <a href="#about">
+            <a 
+                href="#about">
                 <h2>about</h2>
             </a>
-            <a href="https://online.getsquire.com/book/the-social-club-grooming-company-detroit">
-                <h2>book</h2>
-            </a>
-            <a href="#services">
+            <a 
+                href="#services">
                 <h2>services</h2>
             </a>
-            <a href="#contact">
+            <a 
+                href="#contact">
                 <h2>contact</h2>
             </a>
             <a 
@@ -50,6 +54,10 @@
                 target="_blank"
                 class="fa fa-instagram fa-2x ig">    
             </a>
+            <a
+                href="https://online.getsquire.com/book/urbancuts390-napa/barber/daniel-martinez-3">         <!-- alternative: <button class="book_button" data-shop-route="urbancuts390-napa" data-barber-route="daniel-martinez-3" >Book</button>  -->
+                <h2>Book</h2>
+            </a>                         
         </nav>
 
 
@@ -62,6 +70,10 @@
             <p>Monday 9:00 - 3:00 PM</p>
             <p>Wednesday 0:00 - 0:00 PM</p>
             <p>Satruday 0:00 - 0:00 PM</p>
+        
+        
+            <a href="https://getsquire.pro/daniel-martinez-3">quick link</a>
+
         </section>
 
         <section id="services" class="services-container column">
@@ -172,7 +184,7 @@
       let y 
       const nav = document.body.querySelector('nav')
       const navEndPoint = nav.offsetTop + nav.offsetHeight  
-      
+
       window.addEventListener('scroll',setNavDisplay)
 
       function setNavDisplay(){      
@@ -181,6 +193,19 @@
         
       }
 
+      !function(e,t){                           //squire widget
+            var i=e.createElement("script")
+            sa="setAttribute";
+            i.src="https://widget.getsquire.com/widget.js?"+Date.now()
+            i[sa]("defer","")
+            i[sa]("type","text/javascript")
+            i[sa]("brand",t.brand)
+            i[sa]("x-squire-inline-enabled",t.inline||!1)
+            e.head.appendChild(i)
+        
+        }
+
+        ( document,{brand:"urbancuts390",inline:true} ); 
 
 </script>
 

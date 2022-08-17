@@ -45,7 +45,7 @@ body{
 
 h2{
     font-size: 50px;
-
+    
 
     font-family: 'Aboreto', cursive;
 
@@ -53,8 +53,8 @@ h2{
 
 
 
-   
 
+    
 }
 
 p{
@@ -327,3 +327,7 @@ footer h2{
 
 }
 
+
+ .kvkscH{                    /* hides squire default button */
+    display: none;
+}
