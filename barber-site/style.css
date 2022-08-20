@@ -17,7 +17,7 @@ font-family: 'UnifrakturCook', cursive;
 font-family: 'UnifrakturMaguntia', cursive;
  */
 
-*{
+ *{
     box-sizing: border-box;
     font-size: 20px;
 }
@@ -71,6 +71,7 @@ p{
 
 header h1{
     font-size: 4rem;
+    text-align: center;
 }
 
 
@@ -80,7 +81,9 @@ header h1{
     justify-content: center;
     align-items: center;
 
-    /* border: 2px solid cornflowerblue; */
+    width: 100%;
+
+    border: 2px solid cornflowerblue;
     
 }
 
@@ -94,20 +97,42 @@ header h1{
     display: flex;
     flex-direction: column;
 
-    background-color: border 2px solid cadetblue;
 
 }
 
 nav{
-    width: 100%;
     justify-content: space-evenly;
-    align-items: center;
-    color: black;
-    transition-duration: .6s;
+    align-items: end;
+    color: white;
+    flex-direction: column;
+    height: 100vh;
+    padding: 1rem;
+    background-color: #BB6946;   
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    margin-bottom: 2rem;
 
-    
-    
     /* border: 2px solid blue; */
+}
+
+.nav-hamburger{
+    font-size: 2rem;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 2;
+    border: none;
+    background-color: #BB6946;
+
+}
+
+.close-nav-btn{
+    background-color: transparent;
+    border: none;
+    color: inherit;
+    font-size: 1rem;
 
 }
 
@@ -118,6 +143,7 @@ nav h2{
 nav a{
     text-decoration: none;
     color: inherit;
+    cursor: pointer;
 }
 
 nav a:hover{
@@ -130,30 +156,19 @@ nav a:hover{
     width: 10rem;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
     height: 100%;
-    /* width: 8rem; */
     display: flex;
     flex-direction: column;
     background-color: #BB6946;
     color: white;
-    z-index: 100;
-
-
-}
-
-
-
-
-
-
-
-
-img{
-    margin-top: 2rem;
-
+    display: none;
 
 }
+
+
+
+
 
 .ig{
     margin-bottom: .2rem;
@@ -183,6 +198,8 @@ img{
     height: 500px;
     width: 80%;
     display: inline-block;
+    
+    /* border: 2px solid red; */
 }
 
 .sample-cut img{
@@ -195,13 +212,15 @@ img{
 }
 
 .availability{
-    width: 30%;
     text-align: center;
     margin-bottom: 5rem;
-    margin-top: 10rem;
+    margin-top: 3rem;
 
 
-    /* border: 2px solid green; */
+    width: 100%;
+
+
+    border: 2px solid green;
 
 }
 
@@ -214,37 +233,68 @@ img{
     text-align: center;
 }
 
-.services-container{
-    width: 40rem;
+.book-link{
+    text-decoration: none;
+    color: white;
+    font-family: 'Aboreto', cursive;
+    font-weight: bold;
+    display: inline-block;
+    margin-top: 1rem;
+    padding: 1rem;
+    background-color: #27b39e;
 
-    max-width: 50%;
+}
+
+.book-link:hover{
+    opacity: .7;
+
+}
+
+.services-container{
     font-family: 'Inter', sans-serif; 
+    width: 100%;
+    padding: .5rem;
+    max-width: 40rem;
+    margin-bottom: 2rem;
+
+    border: 2px solid  purple;
 
 }
 .services{
     justify-content: space-between;
     align-items: center;
 
-    /* border: 2px solid red; */
+    border: 2px solid red;
 
 
 }
 
 .testimonials{
     text-align: center;
-    max-width: 25rem;
-    min-width: 15rem;
     margin-top: 2rem;
+    width: 100%;
+    max-width: 30rem;
 
-    /* border: 2px solid green; */
+    border: 2px solid green;
 }
+
+.testimonials h2{
+    font-size: 1.5rem;
+}
+
+
 .contact-container{
-    width: 40rem;
-    max-width: 50%;
+    /* width: 40rem;
+    max-width: 50%; */
     justify-content: space-around;
     margin-top: 2rem;
 
-    /* border: 2px solid purple; */
+
+    width: 100%;
+    flex-direction: column;
+    text-align: center;
+
+    border: 2px solid purple;
 }
 .contact-container h2{
     text-align: center;
@@ -262,7 +312,8 @@ img{
     margin-top: 2rem;
     width: 40%;
 
-    /* border: 2px solid orange; */
+    text-align: center;
+    border: 2px solid orange;
 
 }
 
@@ -282,6 +333,7 @@ img{
 footer{
     text-align: center;
     width: 100%;
+    max-width: 25rem;
     
     /* border: 2px solid green; */
 
@@ -290,11 +342,15 @@ footer{
 .footer-img{
     background-image: url('images/chair.jpg');
     width: 100%;
-    height: 30rem ;
+    height: 13rem;
     background-position: center;
     background-size: contain;
     background-repeat: no-repeat;
-    margin: 1rem auto;
+
+    padding: 0;
+    margin: 0;
+    border: 2px solid orange;
+
 }
 
 footer h2{
@@ -305,18 +361,16 @@ footer h2{
 
 
 
-/* swiper */
-
-.carousel{
+.swiper {
     height: 500px;
     width: 80%;
-}
+    max-width: 35rem;
+    z-index: -1;
+    color: white;
+    border: 2px solid red;
 
-.swiper {
-    width: 100%;
-    height: 100%;
-    margin-top: 2rem;
   }
+
 
  
   .swiper-slide img {
@@ -327,7 +381,39 @@ footer h2{
 
 }
 
+.swiper-pagination-fraction{
+    font-size: 1rem ; 
+}
 
- .kvkscH{                    /* hides squire default button */
+
+
+.styles__Book-sc-l9s3l5-0{       
     display: none;
+}
+
+@media (min-width:769px){
+    .close-nav-btn{
+        display: none;
+    }
+    
+    .nav-hamburger{
+        display: none;
+    }
+
+    .nav-active{
+        display: flex;
+        transition-duration: .2s;
+    }
+
+    nav{
+        transform: translateX(0%);
+        width: 100%;
+        display: inline-block;
+        flex-direction: row;
+        align-items: center;
+        height: max-content;
+        position: relative;
+    }
+
+    
 }

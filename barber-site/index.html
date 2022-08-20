@@ -36,7 +36,9 @@
             <img src="" alt="">
         </header>
 
+        <button class="nav-hamburger" onclick="openNav()">☰</button>
         <nav class="row">
+            <button class="close-nav-btn" onclick="closeNav()">X</button>
             <a 
                 href="#about">
                 <h2>about</h2>
@@ -100,7 +102,6 @@
             
         </section>
 
-        <section class="carousel">
             <div class="swiper mySwiper">
                 <div class="swiper-wrapper">
                   <div class="swiper-slide"><img src="images/chair.jpg" alt=""></div>
@@ -114,7 +115,6 @@
                 </div>
                 <div class="swiper-pagination"></div>
             </div>
-        </section>
 
         <section class="testimonials">
             <h2>testimonials</h2>
@@ -167,30 +167,58 @@
     </div>
 
 <script>
-    var swiper = new Swiper(".mySwiper", {
-        slidesPerView: 4,
-        spaceBetween: 30,
-        centeredSlides: true,
-        pagination: {
-          el: ".swiper-pagination",
-          clickable: true
-        }
-      });
-
+            //swiper carousel
+        var swiper = new Swiper(".mySwiper", {
+            pagination: {
+            el: ".swiper-pagination",
+            type: "fraction",
+            
+            },
+            navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+            },
+        });
 
       let y 
       const nav = document.body.querySelector('nav')
       const navEndPoint = nav.offsetTop + nav.offsetHeight  
+      const minWindowWidth = 760
 
       window.addEventListener('scroll',setNavDisplay)
+      window.addEventListener('resize',reCenterNav)
 
-      function setNavDisplay(){      
-        y = window.pageYOffset
-        y >= navEndPoint ? ( nav.classList.remove('nav'), nav.classList.add('nav-active') ) : ( nav.classList.remove('nav-active'), nav.classList.add('nav') )    
-        
+      function reCenterNav(){
+        if(window.innerWidth > minWindowWidth){
+            nav.style.transform = 'translateX(0)'
+        }
+
       }
 
-      !function(e,t){                           //squire widget
+      function setNavDisplay(){
+            if(window.innerWidth > minWindowWidth){
+                y = window.pageYOffset
+                y > navEndPoint ? ( nav.classList.remove('nav'), nav.classList.add('nav-active') ) : ( nav.classList.remove('nav-active'), nav.classList.add('nav') )    
+
+            }
+         
+            // console.log("end point: ",navEndPoint)
+            // console.log(nav.offsetTop, nav.offsetHeight)
+               
+        }
+
+        function closeNav(){
+            nav.style.transform = 'translateX(100%)'
+
+        }
+
+        function openNav(){
+            nav.style.transform = 'translateX(0)'
+            // console.log('clicked')    
+            
+        }
+
+        !function(e,t){                           //squire widget
             var i=e.createElement("script")
             sa="setAttribute";
             i.src="https://widget.getsquire.com/widget.js?"+Date.now()
@@ -204,7 +232,7 @@
 
         ( document,{brand:"urbancuts390",inline:true} ); 
 
-</script>
+    </script>
 
 
 
