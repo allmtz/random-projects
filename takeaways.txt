@@ -13,3 +13,6 @@ daniel squire info
             shop: route: "urbancuts390-napa"
             shortLink: "https://getsquire.pro/daniel-martinez-3"
        
+
+
+using css to rotate a button messes with the onclick attributes firing radius
