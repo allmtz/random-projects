@@ -5,49 +5,39 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Barber</title>
-    <!-- <script src="script.js" defer></script> -->
+    <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
+
+    <!-- fonts  -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- google fonts  -->
-    <!-- <link href="https://fonts.googleapis.com/css2?family=Inter&family=Lobster+Two&family=Roboto&display=swap" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Inter&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 
-    <!-- font awsome -->
+    <!-- font awsome  -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 
     <!-- swiper -->
     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <link
-    rel="stylesheet"
-    href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
-  />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
-    <!-- test fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Ewert&family=Inter&family=Lobster+Two&family=Roboto&family=Tapestry&family=UnifrakturCook&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <div class="container">
         <header>
             <h1>Daniel Martinez</h1>
-                </header>
+        </header>
 
-        <button class="nav-hamburger" onclick="openNav()">☰</button>
-        <nav class="row">
-            <button class="close-nav-btn" onclick="closeNav()">X</button>
-            <a 
-                href="#about">
+        <button class="nav-hamburger" onclick="navSlideIn()">☰</button>
+          <nav class="row">
+            <button class="close-nav-btn" onclick="navSlideOut()">X</button>
+            <a href="#about">
                 <h2>about</h2>
             </a>
-            <a 
-                href="#services">
+            <a href="#services">
                 <h2>services</h2>
             </a>
-            <a 
-                href="#contact">
+            <a href="#contact">
                 <h2>contact</h2>
             </a>
             <a 
@@ -55,38 +45,35 @@
                 target="_blank"
                 class="fa fa-instagram fa-2x ig">    
             </a>
-            <a
-                href="https://online.getsquire.com/book/urbancuts390-napa/barber/daniel-martinez-3">         <!-- alternative: <button class="book_button" data-shop-route="urbancuts390-napa" data-barber-route="daniel-martinez-3" >Book</button>  -->
+            <a href="https://online.getsquire.com/book/urbancuts390-napa/barber/daniel-martinez-3">         <!-- alternative: <button class="book_button" data-shop-route="urbancuts390-napa" data-barber-route="daniel-martinez-3" >Book</button>  -->
                 <h2>Book</h2>
             </a>                         
         </nav>
-
-
+        
         <section class="sample-cut">
-            <img src="images/cut.jpg" alt="">
+            <img src="images/cut.jpg" alt="photo of a haircut">
         </section>
-
+        
         <section class="availability">
             <h2>availability</h2>
             <p>Friday 9:00 AM - 6:00 PM</p>
             <p>Satruday 9:00 AM - 6:00 PM</p>
-        
-        
-            <a class ='book-link' href="https://getsquire.pro/daniel-martinez-3" target="_blank">freshen up</a>
-
+            <a class ='book-link' 
+                href="https://getsquire.pro/daniel-martinez-3" 
+                target="_blank">freshen up</a>
         </section>
 
         <section id="services" class="services-container column">
             <h2>services</h2>
             <div class="row services">
-                <div class="column service-list">
+                <div class="column">
                     <p>haircut</p>
                     <p>haircut/beard trim</p>
                     <p>lineup</p>
                     <p>eyebrows</p>
                     <p>shampoo & conditioning</p>
                 </div>
-                <div class="column service-prices">
+                <div class="column">
                     <p>$38</p>
                     <p>$48</p>
                     <p>$18</p>
@@ -94,36 +81,30 @@
                     <p>$14</p>
                 </div>
             </div>
-                    
-
-
-           
-            
         </section>
 
-            <div class="swiper mySwiper">
-                <div class="swiper-wrapper">
-                  <div class="swiper-slide"><img src="images/chair.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="images/cut.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="images/tools.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="images/about-image.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="images/chair.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="images/cut.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="images/tools.jpg" alt=""></div>
-                  <div class="swiper-slide"><img src="images/about-image.jpg" alt=""></div>
-                </div>
-                <div class="swiper-pagination"></div>
+       <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><img src="images/chair.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/cut.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/tools.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/about-image.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/chair.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/cut.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/tools.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/about-image.jpg" alt=""></div>
+            </div>
+            <div class="swiper-pagination"></div>
             <div class="swiper-button-prev"></div>
             <div class="swiper-button-next"></div>     
-            </div>
+        </div>
 
         <section class="testimonials">
             <h2>testimonials</h2>
             <p>
                 "Daniels been the only person to cut my hair for over a year now
                 and that whole time I've had nothing but a good expereince and a fresh cut!"
-            </p>
-            
+            </p>    
         </section>
 
         <section id="contact" class="contact-container row">
@@ -146,102 +127,16 @@
             </div>
         </section>
 
-        <section id="about" class="about-container column ">
+        <section id="about" class="about-container column">
             <h2>daniel martinez</h2>
-            <img src="images/about-image.jpg" alt="">
+            <img src="images/about-image.jpg" alt="picture of Daniel">
             <p>always got a seat for you, drop by</p>
-
         </section>
 
         <footer>
-
             <div class="footer-img"></div>
             <p>www.ElChinoBlends.com | 2770 Jefferson St, Napa CA 94558 | 707-752-7018</p>
-
         </footer>
     </div>
-
-<script>
-            //swiper carousel
-            var swiper = new Swiper(".mySwiper", {
-        pagination: {
-          el: ".swiper-pagination",
-          type: "fraction",
-            
-          },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-      });
-
-      let y 
-      const nav = document.body.querySelector('nav')
-      const navEndPoint = nav.offsetTop + nav.offsetHeight  
-      const minWindowWidth = 760
-
-      const testNavBreak = nav.offsetTop
-      const testNavHeight = nav.getBoundingClientRect()
-
-      window.addEventListener('scroll',setNavDisplay)
-      window.addEventListener('resize',reCenterNav)
-
-      function reCenterNav(){
-        if(window.innerWidth > minWindowWidth){
-            nav.style.transform = 'translateX(0)'
-        }
-
-      }
-
-      function setNavDisplay(){
-            if(window.innerWidth > minWindowWidth){
-                y = window.pageYOffset
-
-                if(y >= testNavBreak){
-                    document.body.style.paddingTop = `${nav.offsetHeight}px`
-                    document.body.classList.add('fixed-nav')
-                }
-                else{
-                    document.body.style.paddingTop = 0
-                    document.body.classList.remove('fixed-nav')
-                                                      
-                }  
-                    
-            }
-         
-            // console.log("end point: ",navEndPoint)
-            // console.log(nav.offsetTop, nav.offsetHeight)
-               
-        }
-
-        function closeNav(){
-            nav.style.transform = 'translateX(100%)'
-
-        }
-
-        function openNav(){
-            nav.style.transform = 'translateX(0)'
-            // console.log('clicked')    
-            
-        }
-
-        !function(e,t){                           //squire widget
-            var i=e.createElement("script")
-            sa="setAttribute";
-            i.src="https://widget.getsquire.com/widget.js?"+Date.now()
-            i[sa]("defer","")
-            i[sa]("type","text/javascript")
-            i[sa]("brand",t.brand)
-            i[sa]("x-squire-inline-enabled",t.inline||!1)
-            e.head.appendChild(i)
-        
-        }
-
-        ( document,{brand:"urbancuts390",inline:true} ); 
-
-    </script>
-
-
-
 </body>
 </html>
