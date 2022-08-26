@@ -5,17 +5,6 @@ font-family: 'Lobster Two', cursive;
 font-family: 'Roboto', sans-serif; */
 
 
-/* test fonts  */
-/* 
-font-family: 'Aboreto', cursive;
-font-family: 'Ewert', cursive;
-font-family: 'Inter', sans-serif;
-font-family: 'Lobster Two', cursive;
-font-family: 'Roboto', sans-serif;
-font-family: 'Tapestry', cursive;
-font-family: 'UnifrakturCook', cursive;
-font-family: 'UnifrakturMaguntia', cursive;
- */
 
  *{
     box-sizing: border-box;
@@ -23,19 +12,8 @@ font-family: 'UnifrakturMaguntia', cursive;
 }
 
 body{
-    /* display: flex;
-    justify-content: center;
-    align-items: center; */
-    /* min-height: 100vh; */
     margin: 0;
-    /* font-family: 'Lobster Two', cursive; */
     font-family: 'UnifrakturMaguntia', cursive;
-
-
-
-
-
-
     text-transform: capitalize;
     background-color: #faf2e4;
     letter-spacing: .1rem; 
@@ -44,42 +22,26 @@ body{
 
 h2{
     font-size: 50px;
-    
-
     font-family: 'Aboreto', cursive;
-
-
-
-
-
-
     
 }
 
 p{
-
     font-family: 'Inter', sans-serif;
     line-height: 1.5rem;
 
 }
-
-/* image{
-    width: 100%;
-    height: 100%;
-} */
 
 header h1{
     font-size: 4rem;
     text-align: center;
 }
 
-
 .container{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
     width: 100%;
 
     /* border: 2px solid cornflowerblue; */
@@ -96,8 +58,9 @@ header h1{
     display: flex;
     flex-direction: column;
 
-
 }
+
+    /* nav, fixed nav, mobile nav and hamburger styling */
 
 nav{
     justify-content: space-evenly;
@@ -112,7 +75,6 @@ nav{
     right: 0;
     z-index: 2;
 
-    /* border: 2px solid blue; */
 }
 
 .fixed-nav nav{
@@ -169,10 +131,6 @@ nav a:hover{
 
 }
 
-
-
-
-
 .ig{
     margin-bottom: .2rem;
     border: 2px solid inherit;
@@ -185,17 +143,7 @@ nav a:hover{
     border-color: #007664 ;
 }
 
-
-
-
-
-
-
-
-
-
-
-
+    /* sample cut image */
 
 .sample-cut{
     height: 500px;
@@ -214,21 +162,14 @@ nav a:hover{
 
 }
 
+    /* availability section */
+
 .availability{
     text-align: center;
-    margin-bottom: 5rem;
     margin-top: 3rem;
-
-
     width: 100%;
 
-
-    border: 2px solid green;
-
-}
-
-.availability p {
-    font-family: 'Inter', sans-serif; 
+    /* border: 2px solid green; */
 
 }
 
@@ -253,24 +194,28 @@ nav a:hover{
 
 }
 
+    /* services section */
+
 .services-container{
-    font-family: 'Inter', sans-serif; 
     width: 100%;
     padding: .5rem;
     max-width: 40rem;
     margin-bottom: 2rem;
+    margin-top: 3rem;
 
-    border: 2px solid  purple;
+    /* border: 2px solid purple; */
 
 }
+
 .services{
     justify-content: space-between;
     align-items: center;
 
-    border: 2px solid red;
-
+    /* border: 2px solid red; */
 
 }
+
+    /* testimonials */
 
 .testimonials{
     text-align: center;
@@ -278,45 +223,36 @@ nav a:hover{
     width: 100%;
     max-width: 30rem;
 
-    border: 2px solid green;
+    /* border: 2px solid green; */
 }
 
 .testimonials h2{
     font-size: 1.5rem;
 }
 
-
 .contact-container{
-    /* width: 40rem;
-    max-width: 50%; */
+    flex-direction: column;
     justify-content: space-around;
     margin-top: 2rem;
-
-
     width: 100%;
-    flex-direction: column;
     text-align: center;
 
-    border: 2px solid purple;
+    /* border: 2px solid purple; */
 }
 .contact-container h2{
     text-align: center;
 }
 
-.contact-container p{
-    font-family: 'Inter', sans-serif;
-}
-
-
+    /* about */
 
 .about-container{
     justify-content: center;
     align-items: center;
     margin-top: 2rem;
     width: 40%;
-
     text-align: center;
-    border: 2px solid orange;
+    
+    /* border: 2px solid orange; */
 
 }
 
@@ -333,12 +269,14 @@ nav a:hover{
 
 }
 
+    /* footer */
+
 footer{
     text-align: center;
     width: 100%;
     max-width: 25rem;
     
-    /* border: 2px solid green; */
+    /* border: 2px solid violet; */
 
 }
 
@@ -350,19 +288,9 @@ footer{
     background-size: contain;
     background-repeat: no-repeat;
 
-    padding: 0;
-    margin: 0;
-    border: 2px solid orange;
-
 }
 
-footer h2{
-    text-align: center;
-
-}
-
-
-
+    /* swiper */
 
 .swiper {
     height: 500px;
@@ -374,9 +302,7 @@ footer h2{
 
   }
 
-
- 
-  .swiper-slide img {
+.swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
@@ -389,8 +315,8 @@ footer h2{
 }
 
 
-
-/* .styles__Book-sc-l9s3l5-0{       
+    /* targets squire widget's black book button. kind of buggy if turned on */
+/* .styles__Book-sc-l9s3l5-0{     
     display: none;
 } */
 
@@ -418,5 +344,4 @@ footer h2{
         position: relative;
     }
 
-    
 }
