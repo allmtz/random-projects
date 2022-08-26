@@ -113,6 +113,8 @@
                   <div class="swiper-slide"><img src="images/about-image.jpg" alt=""></div>
                 </div>
                 <div class="swiper-pagination"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>     
             </div>
 
         <section class="testimonials">
@@ -161,17 +163,17 @@
 
 <script>
             //swiper carousel
-        var swiper = new Swiper(".mySwiper", {
-            pagination: {
-            el: ".swiper-pagination",
-            type: "fraction",
+            var swiper = new Swiper(".mySwiper", {
+        pagination: {
+          el: ".swiper-pagination",
+          type: "fraction",
             
-            },
-            navigation: {
-            nextEl: ".swiper-button-next",
-            prevEl: ".swiper-button-prev",
-            },
-        });
+          },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
 
       let y 
       const nav = document.body.querySelector('nav')

@@ -298,7 +298,6 @@ footer{
     max-width: 35rem;
     z-index: -1;
     color: white;
-    border: 2px solid red;
 
   }
 
@@ -315,6 +314,11 @@ footer{
 }
 
 
+.swiper-button-next,
+.swiper-button-prev{
+    scale: 1.6;
+
+}
     /* targets squire widget's black book button. kind of buggy if turned on */
 /* .styles__Book-sc-l9s3l5-0{     
     display: none;
