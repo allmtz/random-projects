@@ -320,9 +320,9 @@ footer{
 
 }
     /* targets squire widget's black book button. kind of buggy if turned on */
-/* .styles__Book-sc-l9s3l5-0{     
+.styles__Book-sc-l9s3l5-0{     
     display: none;
-} */
+}
 
 @media (min-width:769px){
     .close-nav-btn{
