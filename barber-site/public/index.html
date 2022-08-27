@@ -1,176 +1,215 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Barber</title>
     <script src="script.js" defer></script>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
 
     <!-- update the version number as needed -->
     <script defer src="/__/firebase/9.9.3/firebase-app-compat.js"></script>
     <!-- include only the Firebase features as you need -->
-    <script defer src="/__/firebase/9.9.3/firebase-analytics-compat.js"></script>
-    <script defer src="/__/firebase/9.9.3/firebase-remote-config-compat.js"></script>
-    <script defer src="/__/firebase/9.9.3/firebase-performance-compat.js"></script>
+    <script
+      defer
+      src="/__/firebase/9.9.3/firebase-analytics-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.9.3/firebase-remote-config-compat.js"
+    ></script>
+    <script
+      defer
+      src="/__/firebase/9.9.3/firebase-performance-compat.js"
+    ></script>
     <!-- 
       initialize the SDK after all desired features are loaded, set useEmulator to false
       to avoid connecting the SDK to running emulators.
     -->
     <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-     <!-- fonts  -->
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Inter&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
- 
-     <!-- font awsome  -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
- 
-     <!-- swiper -->
-     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
+    <!-- fonts  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Aboreto&family=Inter&family=UnifrakturMaguntia&display=swap"
+      rel="stylesheet"
+    />
 
-    
+    <!-- font awsome  -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+
+    <!-- swiper -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"
+    />
   </head>
   <body>
-
     <div class="container">
-        <header>
-            <h1>Daniel Martinez</h1>
-        </header>
+      <header>
+        <h1>Daniel Martinez</h1>
+      </header>
 
-        <button class="nav-hamburger" onclick="navSlideIn()">☰</button>
-          <nav class="row">
-            <button class="close-nav-btn" onclick="navSlideOut()">X</button>
-            <a href="#about">
-                <h2>about</h2>
-            </a>
-            <a href="#services">
-                <h2>services</h2>
-            </a>
-            <a href="#contact">
-                <h2>contact</h2>
-            </a>
-            <a 
-                href="https://www.instagram.com/elchinoblends/?igshid=YmMyMTA2M2Y%3D" 
-                target="_blank"
-                class="fa fa-instagram fa-2x ig">    
-            </a>
-            <a href="https://online.getsquire.com/book/urbancuts390-napa/barber/daniel-martinez-3">         <!-- alternative: <button class="book_button" data-shop-route="urbancuts390-napa" data-barber-route="daniel-martinez-3" >Book</button>  -->
-                <h2>Book</h2>
-            </a>                         
-        </nav>
-        
-        <section class="sample-cut">
-            <img src="images/sample.JPG" alt="photo of a haircut">
-        </section>
-        
-        <section class="availability">
-            <h2>availability</h2>
-            <p>Friday 9:00 AM - 6:00 PM</p>
-            <p>Satruday 9:00 AM - 6:00 PM</p>
-            <a class ='book-link' 
-                href="https://getsquire.pro/daniel-martinez-3" 
-                target="_blank">freshen up</a>
-        </section>
+      <button class="nav-hamburger" onclick="navSlideIn()">☰</button>
+      <nav class="row">
+        <button class="close-nav-btn" onclick="navSlideOut()">X</button>
+        <a href="#about">
+          <h2>about</h2>
+        </a>
+        <a href="#services">
+          <h2>services</h2>
+        </a>
+        <a href="#contact">
+          <h2>contact</h2>
+        </a>
+        <a
+          href="https://www.instagram.com/elchinoblends/?igshid=YmMyMTA2M2Y%3D"
+          target="_blank"
+          class="fa fa-instagram fa-2x ig"
+        >
+        </a>
+        <a
+          href="https://online.getsquire.com/book/urbancuts390-napa/barber/daniel-martinez-3"
+        >
+          <!-- alternative: <button class="book_button" data-shop-route="urbancuts390-napa" data-barber-route="daniel-martinez-3" >Book</button>  -->
+          <h2>Book</h2>
+        </a>
+      </nav>
 
-        <section id="services" class="services-container column">
-            <h2>services</h2>
-            <div class="row services">
-                <div class="column">
-                    <p>haircut</p>
-                    <p>haircut/beard trim</p>
-                    <p>lineup</p>
-                    <p>eyebrows</p>
-                    <p>shampoo & conditioning</p>
-                </div>
-                <div class="column">
-                    <p>$38</p>
-                    <p>$48</p>
-                    <p>$18</p>
-                    <p>$13</p>
-                    <p>$14</p>
-                </div>
-            </div>
-        </section>
+      <section class="sample-cut">
+        <img src="images/sample.JPG" alt="photo of a haircut" />
+      </section>
 
-       <div class="swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide"><img src="images/swiper1.jpeg" alt=""></div>
-                <div class="swiper-slide"><img src="images/swiper2.jpeg" alt=""></div>
-                <div class="swiper-slide"><img src="images/swiper3.jpeg" alt=""></div>
-                <div class="swiper-slide"><img src="images/swiper4.jpeg" alt=""></div>
-                <div class="swiper-slide"><img src="images/swiper5.jpeg" alt=""></div>
-            </div>
-            <div class="swiper-pagination"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-button-next"></div>     
+      <section class="availability">
+        <h2>availability</h2>
+        <p>Friday 9:00 AM - 6:00 PM</p>
+        <p>Satruday 9:00 AM - 6:00 PM</p>
+        <a
+          class="book-link"
+          href="https://getsquire.pro/daniel-martinez-3"
+          target="_blank"
+          >freshen up</a
+        >
+      </section>
+
+      <section id="services" class="services-container column">
+        <h2>services</h2>
+        <div class="row services">
+          <div class="column">
+            <p>haircut</p>
+            <p>haircut/beard trim</p>
+            <p>lineup</p>
+            <p>eyebrows</p>
+            <p>shampoo & conditioning</p>
+          </div>
+          <div class="column">
+            <p>$38</p>
+            <p>$48</p>
+            <p>$18</p>
+            <p>$13</p>
+            <p>$14</p>
+          </div>
         </div>
+      </section>
 
-        <section class="testimonials">
-            <h2>testimonials</h2>
-            <p>
-                "Daniels been the only person to cut my hair for over a year now
-                and that whole time I've had nothing but a good expereince and a fresh cut!"
-            </p>    
-        </section>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/swiper1.jpeg" alt="example cut" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/swiper2.jpeg" alt="example cut" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/swiper3.jpeg" alt="example cut" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/swiper4.jpeg" alt="example cut" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/swiper5.jpeg" alt="example cut" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+      </div>
 
-        <section id="contact" class="contact-container row">
-            <div>
-                <iframe 
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.5199709184835!2d-122.29925468391923!3d38.313788188735714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085060dbd14534f%3A0x2afb86ff9ee9414c!2sUrban%20Cuts%20390!5e0!3m2!1sen!2sus!4v1660264282630!5m2!1sen!2sus" 
-                    width="350" 
-                    height="300" 
-                    style="border:0;" 
-                    allowfullscreen="" 
-                    loading="lazy" 
-                    referrerpolicy="no-referrer-when-downgrade">
-                </iframe>
-            </div>
-            <div>
-                <h2>contact</h2>
-                <p>2770 Jefferson St.<br> 
-                    Napa, CA 94558</p>
-                <p>+1 (707) 752 -7018</p>
-            </div>
-        </section>
+      <section class="testimonials">
+        <h2>testimonials</h2>
+        <p>
+          "Daniels been the only person to cut my hair for over a year now and
+          that whole time I've had nothing but a good expereince and a fresh
+          cut!"
+        </p>
+      </section>
 
-        <section id="about" class="about-container column">
-            <h2>daniel martinez</h2>
-            <img src="images/about-image.jpg" alt="picture of Daniel">
-            <p>always got a seat for you, drop by</p>
-        </section>
+      <section id="contact" class="contact-container row">
+        <div>
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3130.5199709184835!2d-122.29925468391923!3d38.313788188735714!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085060dbd14534f%3A0x2afb86ff9ee9414c!2sUrban%20Cuts%20390!5e0!3m2!1sen!2sus!4v1660264282630!5m2!1sen!2sus"
+            width="350"
+            height="300"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          >
+          </iframe>
+        </div>
+        <div>
+          <h2>contact</h2>
+          <p>
+            2770 Jefferson St.<br />
+            Napa, CA 94558
+          </p>
+          <p>+1 (707) 752 -7018</p>
+        </div>
+      </section>
 
-        <footer>
-            <div class="footer-img"></div>
-            <p>www.ElChinoBlends.com | 2770 Jefferson St, Napa CA 94558 | 707-752-7018</p>
-        </footer>
+      <section id="about" class="about-container column">
+        <h2>daniel martinez</h2>
+        <img src="images/about-image.jpg" alt="picture of Daniel" />
+        <p>always got a seat for you, drop by</p>
+      </section>
+
+      <footer>
+        <div class="footer-img"></div>
+        <p>
+          www.ElChinoBlends.com | 2770 Jefferson St, Napa CA 94558 |
+          707-752-7018
+        </p>
+      </footer>
     </div>
     <script type="module">
-        // Import the functions you need from the SDKs you need
-        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
-        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
-        // TODO: Add SDKs for Firebase products that you want to use
-        // https://firebase.google.com/docs/web/setup#available-libraries
-      
-        // Your web app's Firebase configuration
-        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-        const firebaseConfig = {
-          apiKey: "AIzaSyC6k_RhmSnbW0YpOUrFaPt7IC6gc3gAVpw",
-          authDomain: "daniels-barber-site.firebaseapp.com",
-          projectId: "daniels-barber-site",
-          storageBucket: "daniels-barber-site.appspot.com",
-          messagingSenderId: "153749197434",
-          appId: "1:153749197434:web:9d88735ac2e68f4c8661c3",
-          measurementId: "G-LCWEM7MYLF"
-        };
-      
-        // Initialize Firebase
-        const app = initializeApp(firebaseConfig);
-        const analytics = getAnalytics(app);
+      // Import the functions you need from the SDKs you need
+      import { initializeApp } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-app.js";
+      import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.9.3/firebase-analytics.js";
+      // TODO: Add SDKs for Firebase products that you want to use
+      // https://firebase.google.com/docs/web/setup#available-libraries
+
+      // Your web app's Firebase configuration
+      // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+      const firebaseConfig = {
+        apiKey: "AIzaSyC6k_RhmSnbW0YpOUrFaPt7IC6gc3gAVpw",
+        authDomain: "daniels-barber-site.firebaseapp.com",
+        projectId: "daniels-barber-site",
+        storageBucket: "daniels-barber-site.appspot.com",
+        messagingSenderId: "153749197434",
+        appId: "1:153749197434:web:9d88735ac2e68f4c8661c3",
+        measurementId: "G-LCWEM7MYLF",
+      };
+
+      // Initialize Firebase
+      const app = initializeApp(firebaseConfig);
+      const analytics = getAnalytics(app);
     </script>
-</body>
+  </body>
 </html>
