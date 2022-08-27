@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
+  <head>
+    <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Barber</title>
     <script src="script.js" defer></script>
     <link rel="stylesheet" href="style.css">
 
-    <!-- fonts  -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Inter&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/9.9.3/firebase-app-compat.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/9.9.3/firebase-analytics-compat.js"></script>
+    <script defer src="/__/firebase/9.9.3/firebase-remote-config-compat.js"></script>
+    <script defer src="/__/firebase/9.9.3/firebase-performance-compat.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script defer src="/__/firebase/init.js?useEmulator=true"></script>
 
-    <!-- font awsome  -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+     <!-- fonts  -->
+     <link rel="preconnect" href="https://fonts.googleapis.com">
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Inter&family=UnifrakturMaguntia&display=swap" rel="stylesheet">
+ 
+     <!-- font awsome  -->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ 
+     <!-- swiper -->
+     <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
+     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
-    <!-- swiper -->
-    <script src="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.js"></script>
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
-
-</head>
-<body>
+    
+  </head>
+  <body>
 
     <div class="container">
         <header>
@@ -51,7 +65,7 @@
         </nav>
         
         <section class="sample-cut">
-            <img src="images/cut.jpg" alt="photo of a haircut">
+            <img src="images/sample.JPG" alt="photo of a haircut">
         </section>
         
         <section class="availability">
@@ -86,7 +100,7 @@
        <div class="swiper mySwiper">
             <div class="swiper-wrapper">
                 <div class="swiper-slide"><img src="images/chair.jpg" alt=""></div>
-                <div class="swiper-slide"><img src="images/cut.jpg" alt=""></div>
+                <div class="swiper-slide"><img src="images/test.JPG" alt=""></div>
                 <div class="swiper-slide"><img src="images/tools.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="images/about-image.jpg" alt=""></div>
                 <div class="swiper-slide"><img src="images/chair.jpg" alt=""></div>
