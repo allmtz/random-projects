@@ -1,7 +1,7 @@
 # A collection of projects built for fun 
 
 ### barber-site
-* Personal website built for my brothers barber buisness
+* Personal website built for my brother's barber buisness
 * Tools used: Swiper.js, Google Embed API, Squire widget
 * [Live Demo](https://chinoblends.com/)
 
