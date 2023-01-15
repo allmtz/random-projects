@@ -29,11 +29,12 @@
             <button>Sign Up</button>
         </form>
         <footer>Already have an Account?  Sign in <a href="">Here</a></footer>
-        <button class="toggle" onclick="toggleMode()"></button>
+        <button class="toggle" onclick="toggleMode()"> ☾ </button>
     </div>
 
 <script>
 
+    let isLightMode = true
     const toggleBtn = document.body.querySelector('.toggle')
     const container = document.body.querySelector('.container')
     const form = document.body.querySelector('form')
@@ -41,10 +42,14 @@
     form.addEventListener('submit',(e) => e.preventDefault())
     
     function toggleMode(){
+        isLightMode = !isLightMode
         container.classList.toggle('dark')
         toggleBtn.classList.toggle('light')
+        if(isLightMode)
+            toggleBtn.innerText = "☾"
+        else
+            toggleBtn.innerText = "☼"
     }
-
 </script>
 </body>
 </html>
